@@ -10,9 +10,12 @@ int main() {
   time_t now;
   Timer timer;
   string input;
-  //cout<<ctime(&now);
+
+  timer.elapsed();
 
   timer.start();
+  timer.start();
+
   then = time(NULL);
   cout << "Timer has started (Type'stop' to stop timer)";
   cin >> input;
@@ -23,5 +26,6 @@ int main() {
   timer.elapsed();
   cout << endl << now - then << endl;
   cout << ctime(&now);
+
   return 0;
 }
